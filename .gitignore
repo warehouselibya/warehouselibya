@@ -1,0 +1,10 @@
+# Helper / Scratch Scripts
+crop_images*.ps1
+.codetb-index.json
+*.tmp
+*.log
+
+# System files
+Thumbs.db
+.DS_Store
+.vscode/

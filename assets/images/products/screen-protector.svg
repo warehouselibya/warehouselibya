@@ -1,0 +1,31 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="grad-screen-protector.svg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <filter id="shadow-screen-protector.svg" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#2563eb" flood-opacity="0.18" />
+    </filter>
+  </defs>
+  <rect width="400" height="300" rx="16" fill="url(#grad-screen-protector.svg)" />
+  
+  <circle cx="340" cy="60" r="80" fill="#2563eb" opacity="0.06" />
+  <circle cx="60" cy="240" r="90" fill="#2563eb" opacity="0.05" />
+
+  <g transform="translate(130, 50)" filter="url(#shadow-screen-protector.svg)">
+    <rect width="140" height="140" rx="28" fill="#ffffff" stroke="#2563eb" stroke-width="2.5" stroke-opacity="0.3" />
+    <circle cx="70" cy="70" r="46" fill="#dbeafe" />
+    
+    <g transform="translate(46, 46) scale(2)" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm5 16h.01" />
+    </g>
+  </g>
+
+  <g transform="translate(110, 215)">
+    <rect width="180" height="36" rx="18" fill="#0f172a" opacity="0.92" />
+    <text x="90" y="23" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">
+      WHOLESALE PACK
+    </text>
+  </g>
+</svg>

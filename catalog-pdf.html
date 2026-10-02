@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كتالوج منتجات الجملة | شركة المستودع</title>
+    
+    <!-- خطوط عربية واضحة للطباعة والعرض -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800;900&family=Readex+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-primary: #16202e;
+            --color-secondary: #ea580c;
+            --color-accent: #ff7a00;
+            --color-accent-light: #fff7ed;
+            --color-border: #e2e8f0;
+            --bg-page: #f8fafc;
+            --text-dark: #0f172a;
+            --text-muted: #475569;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Readex Pro', 'Cairo', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-dark);
+            direction: rtl;
+            text-align: right;
+            line-height: 1.5;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+
+        /* شريط التحكم العلوي للعرض بالمتصفح */
+        .top-toolbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #16202e;
+            color: #ffffff;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .toolbar-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .toolbar-badge {
+            background: #ea580c;
+            color: #ffffff;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .toolbar-actions {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn-action {
+            background: linear-gradient(135deg, #ea580c 0%, #ff7a00 100%);
+            color: #ffffff;
+            border: none;
+            padding: 9px 20px;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s;
+            box-shadow: 0 2px 8px rgba(234, 88, 12, 0.4);
+        }
+
+        .btn-action:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(234, 88, 12, 0.6);
+        }
+
+        /* حاوية الكتالوج الرئيسية */
+        .catalog-container {
+            max-width: 1050px;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            border-radius: 12px;
+        }
+
+        /* رأس الكتالوج الرسمي */
+        .catalog-header {
+            border: 2px solid #16202e;
+            border-radius: 12px;
+            padding: 20px;
+            background: linear-gradient(to bottom, #ffffff 0%, #f8fafc 100%);
+            margin-bottom: 24px;
+            position: relative;
+        }
+
+        .header-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+            gap: 20px;
+        }
+
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .header-logo {
+            height: 75px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .header-titles h1 {
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--color-primary);
+            line-height: 1.2;
+        }
+
+        .header-titles p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+            font-weight: 500;
+        }
+
+        .header-contact-box {
+            background: #16202e;
+            color: #ffffff;
+            padding: 12px 18px;
+            border-radius: 10px;
+            text-align: right;
+            font-size: 0.9rem;
+            min-width: 250px;
+            border-right: 4px solid #ea580c;
+        }
+
+        .header-contact-box div {
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .header-contact-box div:last-child {
+            margin-bottom: 0;
+        }
+
+        .header-contact-box strong {
+            color: #fed7aa;
+        }
+
+        /* لافتة التخفيض الكبيرة */
+        .header-notice-banner {
+            background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+            border: 2px dashed #ea580c;
+            border-radius: 8px;
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #9a3412;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .notice-badge {
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: #c2410c;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .notice-sub {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #16202e;
+        }
+
+        /* شبكة الأصناف */
+        .products-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        /* بطاقة المنتج الفردية في الكتالوج */
+        .catalog-item-card {
+            background: #ffffff;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 12px;
+            display: flex;
+            gap: 14px;
+            align-items: stretch;
+            break-inside: avoid !important;
+            page-break-inside: avoid !important;
+            position: relative;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+        }
+
+        .item-image-wrapper {
+            width: 100px;
+            min-width: 100px;
+            height: 100px;
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            align-self: center;
+        }
+
+        .item-image-wrapper img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .item-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-width: 0;
+        }
+
+        .item-title {
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 800;
+            color: #16202e;
+            line-height: 1.35;
+            margin-bottom: 6px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .item-specs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            font-size: 0.82rem;
+            margin-bottom: 8px;
+        }
+
+        .spec-unit {
+            background: #f1f5f9;
+            color: #334155;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .spec-min {
+            background: rgba(30, 58, 138, 0.08);
+            color: #1e3a8a;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 700;
+            border: 1px solid rgba(30, 58, 138, 0.15);
+        }
+
+        .item-footer-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            border-top: 1px dashed #e2e8f0;
+            padding-top: 6px;
+            margin-top: auto;
+        }
+
+        .item-price-box {
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+        }
+
+        .price-val {
+            font-size: 1.25rem;
+            font-weight: 900;
+            color: #16202e;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .price-cur {
+            font-size: 0.85rem;
+            color: #ea580c;
+            font-weight: 700;
+        }
+
+        /* الجملة المطلوبة بخط كبير وواضح على كل صنف */
+        .item-bulk-phrase {
+            background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+            color: #c2410c;
+            border: 1.2px solid #fdba74;
+            border-radius: 6px;
+            padding: 3px 8px;
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.88rem;
+            font-weight: 900;
+            text-align: center;
+            white-space: nowrap;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* ذيل الصفحة الرسمي */
+        .catalog-footer {
+            margin-top: 30px;
+            border-top: 2px solid #16202e;
+            padding-top: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            break-inside: avoid;
+        }
+
+        /* إعدادات الطباعة وتحويل PDF الصارم */
+        @page {
+            size: A4 portrait;
+            margin: 10mm 8mm 12mm 8mm;
+        }
+
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+
+            body {
+                background: #ffffff !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            .catalog-container {
+                max-width: 100% !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                box-shadow: none !important;
+                border-radius: 0 !important;
+            }
+
+            .catalog-header {
+                margin-bottom: 16px !important;
+                padding: 14px !important;
+            }
+
+            .products-list {
+                gap: 10px !important;
+            }
+
+            .catalog-item-card {
+                box-shadow: none !important;
+                border: 1px solid #cbd5e1 !important;
+                padding: 8px 10px !important;
+                break-inside: avoid !important;
+                page-break-inside: avoid !important;
+            }
+
+            .item-image-wrapper {
+                width: 85px !important;
+                min-width: 85px !important;
+                height: 85px !important;
+            }
+
+            .item-title {
+                font-size: 0.88rem !important;
+            }
+
+            .price-val {
+                font-size: 1.15rem !important;
+            }
+
+            .item-bulk-phrase {
+                font-size: 0.82rem !important;
+                padding: 2px 6px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- شريط التحكم للطباعة والعرض (يختفي عند الطباعة وتوليد PDF) -->
+    <div class="top-toolbar no-print">
+        <div class="toolbar-title">
+            <span>📋 كتالوج منتجات شركة المستودع (نسخة الطباعة و PDF)</span>
+            <span class="toolbar-badge" id="catalogCountBadge">جاري التحميل...</span>
+        </div>
+        <div class="toolbar-actions">
+            <button class="btn-action" onclick="window.print()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                    <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                    <rect x="6" y="14" width="12" height="8"></rect>
+                </svg>
+                طباعة / تصدير PDF
+            </button>
+        </div>
+    </div>
+
+    <!-- الحاوية الأساسية للكتالوج -->
+    <div class="catalog-container">
+        
+        <!-- الترويسة الرسمية -->
+        <header class="catalog-header">
+            <div class="header-top">
+                <div class="header-brand">
+                    <img src="assets/images/logo.png" alt="شركة المستودع" class="header-logo" onerror="this.style.display='none'">
+                    <div class="header-titles">
+                        <h1>شركة المستودع</h1>
+                        <p>كتالوج أسعار منتجات الجملة وجملة الجملة لأصحاب المتاجر والصيدليات والمشاريع</p>
+                    </div>
+                </div>
+                <div class="header-contact-box">
+                    <div><strong>📞 هاتف وواتساب:</strong> 0910055702</div>
+                    <div><strong>📍 التغطية:</strong> كافة المدن والمناطق - ليبيا</div>
+                    <div><strong>📅 إصدار الأسعار:</strong> 2026</div>
+                </div>
+            </div>
+
+            <!-- لافتة التخفيض الرئيسية -->
+            <div class="header-notice-banner">
+                <div class="notice-badge">
+                    <span>⚡ تنبيه هام لتجار الجملة:</span>
+                    <span>(يقل السعر في الكميات الكبيرة )</span>
+                </div>
+                <div class="notice-sub">
+                    * الأسعار الموضحة أدناه هي أسعار الجملة، ويتوفر خصم إضافي خاص للطلبيات الكبيرة والكراتين.
+                </div>
+            </div>
+        </header>
+
+        <!-- شبكة المنتجات -->
+        <div class="products-list" id="catalogProductsContainer">
+            <!-- سيتم توليد كافة المنتجات هنا تلقائياً -->
+        </div>
+
+        <!-- تذييل الكتالوج -->
+        <footer class="catalog-footer">
+            <div><strong>شركة المستودع</strong> - تجارة وتوريد كافة البضائع بالجملة | هاتف: 0910055702</div>
+            <div>* تطبق الشروط والأحكام وأقل كمية للطلب لكل صنف</div>
+        </footer>
+
+    </div>
+
+    <!-- تحميل ملف البيانات الرئيسي -->
+    <script src="js/data.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            renderCatalog();
+        });
+
+        function renderCatalog() {
+            const container = document.getElementById('catalogProductsContainer');
+            const badge = document.getElementById('catalogCountBadge');
+            
+            if (!container || typeof PRODUCTS_DATA === 'undefined') {
+                return;
+            }
+
+            badge.textContent = `${PRODUCTS_DATA.length} صنف متوفر`;
+
+            const currency = (typeof STORE_CONFIG !== 'undefined' && STORE_CONFIG.currency) ? STORE_CONFIG.currency : 'د.ل';
+
+            let html = '';
+            PRODUCTS_DATA.forEach(p => {
+                const price = Number(p.price || 0).toFixed(2);
+                const unit = p.unit || 'قطعة';
+                const minOrder = p.minOrder || '1';
+                const img = p.image || 'assets/images/logo.png';
+
+                let priceBoxHtml = `
+                    <div class="item-price-box">
+                        <span class="price-val">${price}</span>
+                        <span class="price-cur">${currency}</span>
+                    </div>
+                `;
+
+                let sizesSpecHtml = '';
+                if (p.sizeOptions && p.sizeOptions.length > 0) {
+                    sizesSpecHtml = `
+                        <div style="display: flex; gap: 4px; flex-wrap: wrap; margin-top: 4px;">
+                            ${p.sizeOptions.map(opt => `
+                                <span style="display: inline-block; font-size: 0.72rem; color: #1e3a8a; background: #eff6ff; border: 1px solid #bfdbfe; padding: 1px 6px; border-radius: 4px; font-weight: 700;">
+                                    ${opt.size}: ${opt.price.toFixed(2)} ${currency}
+                                </span>
+                            `).join('')}
+                        </div>
+                    `;
+                    priceBoxHtml = `
+                        <div class="item-sizes-price-box" style="display: flex; gap: 4px; flex-wrap: wrap; align-items: center;">
+                            ${p.sizeOptions.map(opt => `
+                                <span style="font-size: 0.75rem; background: #1e3a8a; color: #ffffff; padding: 2px 6px; border-radius: 4px; font-weight: 800; white-space: nowrap;">
+                                    ${opt.size} = ${opt.price.toFixed(2)} ${currency}
+                                </span>
+                            `).join('')}
+                        </div>
+                    `;
+                }
+
+                html += `
+                    <div class="catalog-item-card">
+                        <div class="item-image-wrapper">
+                            <img src="${img}" alt="${p.name}" loading="eager" decoding="async" onerror="if(this.src.endsWith('.webp')){this.src=this.src.replace(/\\.webp$/i,'.png');}else{this.onerror=null;this.src='assets/images/logo.png';}">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-title" title="${p.name}">${p.name}</div>
+                            
+                            <div class="item-specs">
+                                <span class="spec-unit">العبوة: ${unit}</span>
+                                <span class="spec-min">أقل كمية للطلب: ${minOrder}</span>
+                                ${(p.variants && p.variants.length > 1) ? `<span style="display: inline-block; font-size: 0.72rem; color: #4f46e5; background: #eef2ff; padding: 1px 6px; border-radius: 4px; font-weight: bold; margin-top: 3px;">متوفر بـ ${p.variants.length} أنواع</span>` : ''}
+                                ${sizesSpecHtml}
+                            </div>
+
+                            <div class="item-footer-row">
+                                ${priceBoxHtml}
+                                <div class="item-bulk-phrase">
+                                    <span>(يقل السعر في الكميات الكبيرة )</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="grad-bags.svg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffedd5"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <filter id="shadow-bags.svg" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#ea580c" flood-opacity="0.18" />
+    </filter>
+  </defs>
+  <rect width="400" height="300" rx="16" fill="url(#grad-bags.svg)" />
+  
+  <circle cx="340" cy="60" r="80" fill="#ea580c" opacity="0.06" />
+  <circle cx="60" cy="240" r="90" fill="#ea580c" opacity="0.05" />
+
+  <g transform="translate(130, 50)" filter="url(#shadow-bags.svg)">
+    <rect width="140" height="140" rx="28" fill="#ffffff" stroke="#ea580c" stroke-width="2.5" stroke-opacity="0.3" />
+    <circle cx="70" cy="70" r="46" fill="#ffedd5" />
+    
+    <g transform="translate(46, 46) scale(2)" stroke="#ea580c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18m-5 4a4 4 0 0 1-8 0" />
+    </g>
+  </g>
+
+  <g transform="translate(110, 215)">
+    <rect width="180" height="36" rx="18" fill="#0f172a" opacity="0.92" />
+    <text x="90" y="23" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">
+      WHOLESALE PACK
+    </text>
+  </g>
+</svg>

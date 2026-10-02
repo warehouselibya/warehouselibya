@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة المستودع | Warehouse - منتجات بالجملة وجملة الجملة</title>
+    <meta name="description" content="شركة المستودع توفر مختلف المنتجات بالجملة وجملة الجملة لأصحاب المتاجر والصيدليات والمشاريع الصغيرة. توريد فوري وأسعار منافسة.">
+    <meta name="keywords" content="شركة المستودع, تجارة الجملة, جملة الجملة, صيدليات, متاجر, مشاريع صغيرة, مواد غذائية, منظفات, ليبيا, توريد">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="شركة المستودع | Warehouse - منتجات بالجملة وجملة الجملة">
+    <meta property="og:description" content="كل المنتجات المختلفة بالجملة وجملة الجملة لأصحاب المتاجر والصيدليات والمشاريع الصغيرة.">
+    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Google Fonts: Cairo (Heading) & Readex Pro (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800;900&family=Readex+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- الشريط العلوي للإعلانات والمعلومات السريعة -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-item">
+                <span>⚡ توريد فوري بالجملة وجملة الجملة للمتاجر والصيدليات والمشاريع</span>
+            </div>
+            <div class="top-bar-item">
+                <span>تواصل مباشر: </span>
+                <a href="https://wa.me/218910055702" target="_blank" dir="ltr">+218 91 005 5702</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- شريط التنقل الرئيسي (Header & Navbar) -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- شعار المتجر -->
+                <a href="index.html" class="brand-logo" title="شركة المستودع">
+                    <img src="assets/images/logo.webp" alt="شعار شركة المستودع | Warehouse" onerror="this.onerror=null;this.src='assets/images/logo.png';">
+                </a>
+
+                <!-- روابط التنقل للشاشات الكبيرة -->
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="#latest-showcase" class="nav-link">الأخبار والجديد</a></li>
+                    <li><a href="products.html" class="nav-link">المنتجات</a></li>
+                    <li><a href="#about" class="nav-link">من نحن</a></li>
+                    <li><a href="#how-it-works" class="nav-link">طريقة الطلب</a></li>
+                    <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+                </ul>
+
+                <!-- أزرار الإجراءات السريعة والسلة -->
+                <div class="header-actions">
+                    <button class="cart-toggle-btn" aria-label="سلة المشتريات" title="عرض السلة">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="cart-badge" style="display: none;">0</span>
+                    </button>
+
+                    <a href="https://wa.me/218910055702" target="_blank" class="btn btn-whatsapp header-whatsapp-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        واتساب
+                    </a>
+
+                    <!-- زر الموبايل -->
+                    <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="فتح القائمة">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- القائمة الجانبية للموبايل -->
+    <div class="drawer-backdrop" id="mobileNavBackdrop"></div>
+    <div class="mobile-drawer" id="mobileNavDrawer">
+        <div>
+            <div class="mobile-drawer-header">
+                <div class="brand-logo">
+                    <img src="assets/images/logo.webp" alt="شركة المستودع" onerror="this.onerror=null;this.src='assets/images/logo.png';">
+                </div>
+                <button id="mobileNavClose" class="btn-icon" aria-label="إغلاق القائمة">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="mobile-nav-links">
+                <a href="index.html" class="mobile-nav-link active">الرئيسية</a>
+                <a href="#latest-showcase" class="mobile-nav-link" onclick="document.getElementById('mobileNavClose').click();">📢 الأخبار والجديد</a>
+                <a href="products.html" class="mobile-nav-link">المنتجات بالجملة</a>
+                <a href="javascript:void(0)" class="mobile-nav-link mobile-cart-link" onclick="cartManager.openCartDrawer(); document.getElementById('mobileNavClose').click();">
+                    🛒 سلة المشتريات <span class="cart-badge-inline" style="display: none; background: var(--color-accent); color: var(--color-primary); padding: 2px 8px; border-radius: 12px; font-size: 0.8rem; font-weight: bold; margin-right: 8px;"></span>
+                </a>
+                <a href="#about" class="mobile-nav-link">من نحن؟</a>
+                <a href="#how-it-works" class="mobile-nav-link">كيفية الطلب</a>
+                <a href="#contact" class="mobile-nav-link">تواصل معنا</a>
+            </div>
+        </div>
+        <div>
+            <a href="https://wa.me/218910055702" target="_blank" class="btn btn-whatsapp" style="width: 100%;">
+                تواصل عبر WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- قسم الشرائح الدوارة: آخر الأخبار وأحدث المنتجات الواصلة للمستودع (في أعلى الصفحة) -->
+    <section class="carousel-section" id="latest-showcase">
+        <div class="container">
+            <div class="carousel-header">
+                <div class="carousel-title-group">
+                    <div class="carousel-badge-top">
+                        <span class="pulse-dot"></span>
+                        <span>تحديثات مستمرة ومنتجات وافدة</span>
+                    </div>
+                    <h2 class="carousel-section-title">أحدث الأخبار والمنتجات الجديدة</h2>
+                    <p class="carousel-section-subtitle">ابقَ على اطلاع بأحدث التوريدات، العروض الحصرية، والمنتجات الواصلة حديثاً للمستودع</p>
+                </div>
+
+                <div class="carousel-controls-bar">
+                    <!-- تبويبات التصفية -->
+                    <div class="carousel-filter-tabs">
+                        <button type="button" class="carousel-filter-btn active" data-filter="products">
+                            <span>🔥 أحدث المنتجات</span>
+                        </button>
+                    </div>
+
+                    <!-- أزرار التنقل (Next / Prev) وعدّاد الشرائح -->
+                    <div class="carousel-nav-group">
+                        <span class="carousel-counter" id="carouselCounter">
+                            <span class="carousel-current">1</span> / <span class="carousel-total">8</span>
+                        </span>
+                        <button type="button" class="carousel-nav-btn prev" id="carouselPrevBtn" aria-label="الشريحة السابقة" title="السابق">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                        <button type="button" class="carousel-nav-btn next" id="carouselNextBtn" aria-label="الشريحة التالية" title="التالي">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- حاوية الشرائح الدوارة -->
+            <div class="carousel-wrapper" id="carouselWrapper">
+                <!-- شريط التقدم التلقائي للوقت -->
+                <div class="carousel-progress-track">
+                    <div class="carousel-progress-fill" id="carouselProgressFill"></div>
+                </div>
+
+                <!-- مسار الشرائح (Slider Track) -->
+                <div class="carousel-track-container">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- يتم توليد الشرائح ديناميكياً بواسطة JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- نقاط الترقيم التفاعلية (Indicators / Dots) -->
+            <div class="carousel-indicators" id="carouselIndicators">
+                <!-- يتم توليد النقاط ديناميكياً بواسطة JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- القسم الرئيسي (Hero Section) -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge-tag">
+                        <span>🏢</span> الوجهة الأولى لتجارة الجملة وجملة الجملة
+                    </div>
+                    <h1 class="hero-title">
+                        كل المنتجات المختلفة <span>بالجملة وجملة الجملة</span> لأصحاب المتاجر والصيدليات والمشاريع الصغيرة
+                    </h1>
+                    <p class="hero-description">
+                        نوفر لتجارتك تشكيلة واسعة ومتنوعة بأسعار التكلفة المباشرة لتضمن أعلى هامش ربح لمتجرك أو صيدليتك. طلب سريع، فواتير دقيقة، وتأكيد مباشر عبر WhatsApp.
+                    </p>
+                    <div class="hero-cta-group">
+                        <a href="products.html" class="btn btn-primary btn-lg">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            تصفح المنتجات
+                        </a>
+                        <a href="https://wa.me/218910055702" target="_blank" class="btn btn-whatsapp btn-lg">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                            </svg>
+                            تواصل معنا عبر WhatsApp
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <p>أسعار جملة وجملة الجملة</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>توريد فوري</h3>
+                            <p>تجهيز سريع للطلبيات</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>توصيل سريع</h3>
+                            <p>إلى جميع أنحاء ليبيا</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="hero-brand-showcase">
+                        <!-- وسم عائم: أسعار جملة الجملة -->
+                        <div class="hero-floating-tag tag-top-right">
+                            <span class="tag-icon">⚡</span>
+                            <div class="tag-text">
+                                <strong>أسعار جملة الجملة</strong>
+                                <span>توفير مباشر لأصحاب المتاجر</span>
+                            </div>
+                        </div>
+
+                        <!-- وسم عائم: توصيل سريع -->
+                        <div class="hero-floating-tag tag-top-left">
+                            <span class="tag-icon">🚚</span>
+                            <div class="tag-text">
+                                <strong>توصيل سريع</strong>
+                                <span>إلى جميع أنحاء ليبيا</span>
+                            </div>
+                        </div>
+
+                        <!-- بطاقة الشعار الرسمية -->
+                        <div class="hero-logo-card">
+                            <div class="hero-logo-glow"></div>
+                            <div class="hero-logo-img-box">
+                                <img src="assets/images/logo.webp" alt="شركة المستودع | WAREHOUSE" class="hero-logo-img" onerror="this.onerror=null;this.src='assets/images/logo.png';">
+                            </div>
+                            <div class="hero-logo-badge">
+                                <span class="pulse-dot"></span>
+                                <span>الوجهة الأولى لتجارة الجملة وجملة الجملة</span>
+                            </div>
+                        </div>
+
+                        <!-- وسم سفلي: التعامل بالفواتير للصيدليات والمحلات -->
+                        <div class="hero-floating-tag tag-bottom">
+                            <span class="tag-icon">🧾</span>
+                            <div class="tag-text">
+                                <strong style="font-size: 0.92rem;">تعامل بالفواتير للصيدليات والمحلات</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم مزايا التعامل مع شركة المستودع -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">المزايا الحصرية</div>
+                <h2 class="section-title">لماذا يفضل التجار شركة المستودع؟</h2>
+                <p class="section-desc">نوفر لك كل ما يلزم لنمو تجارتك وزيادة أرباحك بأسهل الطرق وأعلى جودة.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-box">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">أسعار جملة الجملة</h3>
+                    <p class="feature-desc">خصومات قوية وأسعار توريد مباشرة من المنشأ بدون وسطاء، لتضمن لمتجرك هامش ربح ممتاز.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-box">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">تنوع شامل للمنتجات</h3>
+                    <p class="feature-desc">أقسام متعددة تشمل الصيدليات، محلات التجميل، العطرية، وغيرها في مكان واحد.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-box">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">سهولة وسرعة الطلب</h3>
+                    <p class="feature-desc">اختر المنتجات، راجع فاتورتك، وأرسل طلبك بنقرة زر واحدة مباشرة إلى WhatsApp بدون تعقيد.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-box">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">خدمة عملاء وتواصل سريع</h3>
+                    <p class="feature-desc">فريق جاهز للرد على استفساراتكم وتأكيد طلبياتكم وتجهيز الشحنات في أسرع وقت ممكن.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم من نحن؟ (About Us) -->
+    <section class="section section-bg" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="badge badge-gold" style="margin-bottom: 12px;">من نحن؟</div>
+                    <h2>شركة المستودع | Warehouse</h2>
+                    <p class="about-text">
+                        نحن في <strong>شركة المستودع</strong> متخصصون في توريد مختلف البضائع والمنتجات بأسعار الجملة وجملة الجملة. نهدف إلى تمكين أصحاب الأعمال من الحصول على أفضل الأسعار والمنتجات بأعلى كفاءة وسرعة.
+                    </p>
+
+                    <h4 style="font-size: 1.15rem; margin-bottom: 14px; color: var(--color-primary);">نستهدف ونخدم بفخر:</h4>
+                    <div class="target-audience-list">
+                        <div class="target-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>الصيدليات والمراكز الطبية</span>
+                        </div>
+                        <div class="target-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>أصحاب المتاجر والسوبرماركت</span>
+                        </div>
+                        <div class="target-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>تجار التجزئة والموزعين</span>
+                        </div>
+                        <div class="target-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>أصحاب المشاريع الناشئة والصغيرة</span>
+                        </div>
+                    </div>
+
+                    <a href="products.html" class="btn btn-dark">
+                        استكشف قائمة المنتجات
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="about-card-banner">
+                    <h3>شريكك التجاري الأول للتوريد</h3>
+                    <p>نسهل عليك عمليات الشراء والتزويد المستمر بالمخزون دون الحاجة للتعامل مع موردين متعددين.</p>
+                    
+                    <div class="wholesale-points">
+                        <div class="wholesale-point">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>توفير كميات كبيرة وجملة الجملة بعروض حصرية</span>
+                        </div>
+                        <div class="wholesale-point">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>نظام فواتير واضح ومباشر قبل الإرسال</span>
+                        </div>
+                        <div class="wholesale-point">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>ربط مباشر وتأكيد سريع عبر الواتساب</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المنتجات المميزة المختارة -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">تشكيلة مختارة</div>
+                <h2 class="section-title">أحدث عروض ومنتجات الجملة</h2>
+                <p class="section-desc">مجموعة مختارة من المنتجات الأكثر طلباً في السوق بأسعار الجملة الحصرية.</p>
+            </div>
+
+            <!-- شبكة المنتجات المعروضة من خلال JS -->
+            <div class="products-grid" id="featuredProductsGrid">
+                <!-- يتم توليد البطاقات ديناميكياً بواسطة JavaScript -->
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="products.html" class="btn btn-primary btn-lg">
+                    عرض جميع المنتجات والتصنيفات
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم خطوات الطلب (How It Works) -->
+    <section class="section section-bg" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">خطوات بسيطة وسريعة</div>
+                <h2 class="section-title">كيف تطلب من شركة المستودع؟</h2>
+                <p class="section-desc">صممنا لك تجربة طلب سريعة ومريحة لتوفير وقتك وجهدك.</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h4>اختر المنتجات</h4>
+                    <p>تصفح كتالوج المنتجات وأضف الأصناف والكميات المناسبة لمتجرك أو صيدليتك إلى السلة.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h4>راجع السلة وبياناتك</h4>
+                    <p>اضغط على إتمام الطلب وأدخل بيانات متجرك وعنوانك ورقم هاتفك للتواصل.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h4>عاين الفاتورة</h4>
+                    <p>اطلع على الفاتورة المفصلة لطلبك مع إجمالي الأسعار والكميات بدقة تامة.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h4>إرسال الطلب عبر WhatsApp</h4>
+                    <p>اضغط على زر الإرسال لتصل الفاتورة مباشرة لفريقنا عبر WhatsApp لتأكيد الشحن والتجهيز.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم وسائل التواصل الاجتماعي -->
+    <section class="social-section" id="contact">
+        <div class="container">
+            <div class="section-header" style="color: #ffffff;">
+                <div class="section-subtitle" style="color: var(--color-accent);">قنوات التواصل الرسمية</div>
+                <h2 class="section-title" style="color: #ffffff;">تابعنا وتواصل معنا مباشرة</h2>
+                <p class="section-desc" style="color: #cbd5e1;">يسعدنا تواصلك معنا للاستفسار عن طلبيات الجملة وعروض الأسعار الخاصة.</p>
+            </div>
+
+            <div class="social-grid">
+                <!-- بطاقة فيسبوك -->
+                <a href="https://www.facebook.com/share/19TcBmZCx4/?mibextid=wwXIfr" target="_blank" class="social-card">
+                    <div class="social-card-info">
+                        <div class="social-card-icon facebook">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 1.15rem; color: #ffffff;">صفحتنا على Facebook</h4>
+                            <p style="font-size: 0.9rem; color: #94a3b8;">تابع أحدث العروض والمنتجات</p>
+                        </div>
+                    </div>
+                    <span class="btn btn-outline-white btn-sm">زيارة الصفحة</span>
+                </a>
+
+                <!-- بطاقة إنستغرام -->
+                <a href="https://www.instagram.com/warehouse_ly?igsi=b2c5YmhyNXQ5ZDh4&utm_source=qr" target="_blank" class="social-card">
+                    <div class="social-card-info">
+                        <div class="social-card-icon instagram">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 1.15rem; color: #ffffff;">حسابنا على Instagram</h4>
+                            <p style="font-size: 0.9rem; color: #94a3b8;">@warehouse_ly</p>
+                        </div>
+                    </div>
+                    <span class="btn btn-outline-white btn-sm">متابعة الحساب</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر (Footer) -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div style="background: #ffffff; display: inline-flex; align-items: center; justify-content: center; padding: 6px 12px; border-radius: 10px; margin-bottom: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+                        <img src="assets/images/logo.webp" alt="شركة المستودع" onerror="this.onerror=null;this.src='assets/images/logo.png';" style="height: 48px; width: auto;">
+                    </div>
+                    <p class="footer-desc">
+                        شركة المستودع | Warehouse - كل المنتجات المختلفة بالجملة وجملة الجملة لأصحاب المتاجر والصيدليات والمشاريع الصغيرة وتجار التجزئة.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>روابط سريعة</h4>
+                    <div class="footer-links">
+                        <a href="index.html">الصفحة الرئيسية</a>
+                        <a href="#latest-showcase">الأخبار والجديد</a>
+                        <a href="products.html">كتالوج المنتجات</a>
+                        <a href="#about">نبذة عن النشاط</a>
+                        <a href="#how-it-works">كيفية إرسال الطلب</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>خدماتنا ومزايانا</h4>
+                    <div class="footer-links">
+                        <a href="products.html">أسعار جملة وجملة الجملة</a>
+                        <a href="products.html">فواتير دقيقة وفورية</a>
+                        <a href="https://wa.me/218910055702" target="_blank">تأكيد مباشر عبر WhatsApp</a>
+                        <a href="#about">توريد لكافة المتاجر والصيدليات</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>معلومات التواصل</h4>
+                    <div class="footer-contact-list">
+                        <div class="footer-contact-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <a href="https://wa.me/218910055702" target="_blank" dir="ltr">+218 91 005 5702</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>ليبيا - خدمات التوريد والتوصيل لكافة المناطق</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>© 2026 شركة المستودع - Warehouse. جميع الحقوق محفوظة.</div>
+                <div>تجارة الجملة وجملة الجملة لأصحاب الأعمال</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- الزر العائم للواتساب (Floating WhatsApp Button) -->
+    <div class="floating-whatsapp">
+        <div class="floating-whatsapp-tooltip">تواصل معنا مباشرة عبر WhatsApp</div>
+        <a href="https://wa.me/218910055702" target="_blank" class="floating-whatsapp-btn" aria-label="محادثة واتساب">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- زر السلة العائم السريع (Floating Cart Button) -->
+    <div class="floating-cart">
+        <button class="floating-cart-btn cart-toggle-btn" aria-label="عرض سلة المشتريات" title="عرض سلة المشتريات">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <span class="cart-badge" style="display: none;">0</span>
+        </button>
+        <div class="floating-cart-tooltip">سلة الطلبات</div>
+    </div>
+
+    <!-- درج السلة الجانبي (Cart Drawer) -->
+    <div class="drawer-backdrop" id="cartBackdrop"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                سلة طلبات الجملة
+            </h3>
+            <button id="cartDrawerCloseBtn" class="btn-icon" aria-label="إغلاق السلة">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <div class="cart-body" id="cartDrawerBody">
+            <!-- يتم عرض عناصر السلة هنا عبر JS -->
+        </div>
+
+        <div class="cart-footer" id="cartDrawerFooter" style="display: none;">
+            <div class="cart-summary-row">
+                <span>عدد المنتجات:</span>
+                <strong id="cartDrawerCount">0</strong>
+            </div>
+            <div class="cart-summary-row cart-summary-total">
+                <span>إجمالي الطلب بالجملة:</span>
+                <span id="cartDrawerTotal">0.00 د.ل</span>
+            </div>
+            <button class="btn btn-primary" id="checkoutBtn" style="width: 100%;">
+                إتمام الطلب والمعاينة
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- نافذة إدخال بيانات العميل (Checkout Modal) -->
+    <div class="modal-overlay" id="checkoutModal">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="8.5" cy="7.5" r="4"></circle>
+                        <polyline points="17 11 19 13 23 9"></polyline>
+                    </svg>
+                    بيانات إتمام طلب الجملة
+                </div>
+                <button class="btn-icon" id="checkoutModalClose" aria-label="إغلاق">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <form id="checkoutForm">
+                <div class="modal-body">
+                    <div class="form-grid-2">
+                        <div class="form-group">
+                            <label class="form-label" for="customerName">اسم العميل / المسؤول <span class="req">*</span></label>
+                            <input type="text" id="customerName" class="form-control" placeholder="مثال: أحمد مصطفى" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="customerPhone">رقم الهاتف للتواصل <span class="req">*</span></label>
+                            <input type="tel" id="customerPhone" class="form-control" placeholder="مثال: 0910000000" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="customerStore">اسم المتجر / الصيدلية / النشاط <span class="req">*</span></label>
+                        <input type="text" id="customerStore" class="form-control" placeholder="مثال: صيدلية الشفاء / سوبرماركت الأمانة" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="customerAddress">المدينة والعنوان التفصيلي <span class="req">*</span></label>
+                        <input type="text" id="customerAddress" class="form-control" placeholder="مثال: طرابلس - طريق الشط بالقرب من..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="customerNotes">ملاحظات إضافية على الطلبية</label>
+                        <textarea id="customerNotes" class="form-control" placeholder="أي تفاصيل خاصة بالتوصيل، أوقات الاستلام أو استفسار محدد..."></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline" id="cancelCheckoutBtn">رجوع للسلة</button>
+                    <button type="submit" class="btn btn-primary">
+                        متابعة لمعاينة الفاتورة
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- نافذة معاينة الفاتورة الاحترافية (Invoice Preview Modal) -->
+    <div class="modal-overlay" id="invoicePreviewModal">
+        <div class="modal-dialog" style="max-width: 750px;">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                    معاينة فاتورة الطلب
+                </div>
+                <button class="btn-icon" id="invoiceModalClose" aria-label="إغلاق">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body" id="invoiceDetailsContent">
+                <!-- يتم توليد الفاتورة ديناميكياً بواسطة checkout.js -->
+            </div>
+            <div class="modal-footer" style="justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                    <button type="button" class="btn btn-outline" id="printInvoiceBtn" title="طباعة الفاتورة">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                            <rect x="6" y="14" width="12" height="8"></rect>
+                        </svg>
+                        طباعة
+                    </button>
+                    <button type="button" class="btn btn-outline" id="downloadInvoiceImageBtn" title="تحميل صورة الفاتورة المطبوعة">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        تحميل صورة (PNG)
+                    </button>
+                    <button type="button" class="btn btn-outline" id="copyInvoiceTextBtn" title="نسخ نص تفاصيل الفاتورة">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                        نسخ النص
+                    </button>
+                </div>
+                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                    <button type="button" class="btn btn-outline" id="closeInvoiceBtn">تعديل الطلب</button>
+                    <button type="button" class="btn btn-whatsapp" id="sendWhatsAppOrderBtn" title="إرسال الفاتورة إلى WhatsApp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        إرسال الفاتورة عبر WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- نافذة المعاينة السريعة للمنتج (Quick View Modal) -->
+    <div class="modal-overlay" id="quickViewModal">
+        <div class="modal-dialog" style="max-width: 680px;">
+            <div class="modal-header">
+                <div class="modal-title">تفاصيل المنتج بالجملة</div>
+                <button class="btn-icon" onclick="closeQuickViewModal()" aria-label="إغلاق">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body" id="quickViewModalContent">
+                <!-- يتم تعبئة التفاصيل من app.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- جافاسكربت الخاص بالمتجر -->
+    <script src="js/data.js"></script>
+    <script src="js/html2canvas.min.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
